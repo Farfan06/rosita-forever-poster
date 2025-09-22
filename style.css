@@ -31,9 +31,13 @@ body {
     margin-bottom: 30px;
 }
 .logo img {
-    max-width: 250px;
+    width: 100%;           /* Que nunca se salga del contenedor */
+    max-width: 220px;      /* Tamaño máximo en PC */
+    height: auto;          /* Mantiene proporción */
     border-radius: 10px;
     box-shadow: 0 0 25px #00f0ff;
+    display: block;
+    margin: 0 auto;        /* Centrado */
 }
 
 /* ======= SECCIONES ======= */
@@ -77,7 +81,6 @@ body {
 }
 
 /* ======= QR ======= */
-/* CONTENEDOR QR */
 .qr-container {
     display: flex;
     flex-direction: column;
@@ -88,10 +91,8 @@ body {
     border-radius: 12px;
     box-shadow: 0 0 20px rgba(0, 255, 255, 0.4);
     max-width: 250px;
-    margin: 0 auto; /* Para centrar dentro del contenedor principal */
+    margin: 0 auto;
 }
-
-/* CAJA DEL QR */
 .qr-box {
     display: flex;
     justify-content: center;
@@ -102,14 +103,10 @@ body {
     border: 2px solid cyan;
     margin-bottom: 10px;
 }
-
-/* IMAGEN QR */
 .qr-box img {
     width: 180px;
     height: 180px;
 }
-
-/* TEXTO DEL QR */
 .qr-text {
     text-align: center;
     color: white;
@@ -143,7 +140,7 @@ footer {
     }
 
     .logo img {
-        max-width: 180px;
+        max-width: 160px; /* Más pequeño en tablet/móvil */
     }
 
     .section {
@@ -175,3 +172,10 @@ footer {
         padding: 10px;
     }
 }
+
+@media (max-width: 480px) {
+    .logo img {
+        max-width: 130px; /* Más reducido en móviles pequeños */
+    }
+}
+
