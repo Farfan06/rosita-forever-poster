@@ -47,7 +47,7 @@
                     </div>
                 </div>
 
-                <!-- Tecnologías + QR -->
+                <!-- Tecnologías + QRs -->
                 <div class="col-12 col-md-6">
                     <div class="section">
                         <h2>TECNOLOGÍAS</h2>
@@ -57,10 +57,23 @@
                             <li>✔ MySQL</li>
                             <li>✔ Bootstrap</li>
                         </ul>
-                        <!-- CONTENEDOR DEL QR -->
-                        <div class="qr-container">
-                            <div id="qrcode"></div>
-                            <p class="qr-text">Escanea para ver la documentación</p>
+
+                        <!-- QRs lado a lado -->
+                        <div class="row qrs-wrapper">
+                            <!-- QR Documentación -->
+                            <div class="col-12 col-md-6 d-flex justify-content-center">
+                                <div class="qr-container doc-qr">
+                                    <div id="qrcode"></div>
+                                    <p class="qr-text">📄 Escanea para ver la documentación</p>
+                                </div>
+                            </div>
+                            <!-- QR Página -->
+                            <div class="col-12 col-md-6 d-flex justify-content-center">
+                                <div class="qr-container web-qr">
+                                    <div id="qrcode2"></div>
+                                    <p class="qr-text">🌐 Escanea para ir a la página web</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -81,6 +94,15 @@
             height: 160,
             colorDark: "#00f0ff",
             colorLight: "#0f0f1a",
+            correctLevel: QRCode.CorrectLevel.H
+        });
+
+        new QRCode(document.getElementById("qrcode2"), {
+            text: "https://rositaforever.shop",
+            width: 160,
+            height: 160,
+            colorDark: "#1E90FF",
+            colorLight: "#101820",
             correctLevel: QRCode.CorrectLevel.H
         });
     </script>
