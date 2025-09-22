@@ -1,7 +1,7 @@
 /* ======= GENERAL ======= */
 body {
     font-family: Arial, sans-serif;
-    background-color: #0f0f1a;
+    background-color: #0a0a1a; /* Fondo más oscuro para resaltar el neón */
     color: #e0e0e0;
     margin: 0;
     padding: 20px;
@@ -13,92 +13,63 @@ body {
 .contenedor-principal {
     max-width: 1100px;
     width: 100%;
-    background: rgba(10, 20, 40, 0.95); /* Azul muy oscuro */
+    background: #001f3f; /* Azul fuerte */
     border-radius: 20px;
     padding: 30px;
-    box-shadow: 0 0 40px #00f0ff; /* Glow azul */
-}
-
-/* ======= CONTENEDOR INTERNO ======= */
-.container {
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-/* ======= LOGO ======= */
-.logo {
-    text-align: center;
-    margin-bottom: 30px;
-}
-.logo img {
-    max-width: 250px;
-    border-radius: 10px;
-    box-shadow: 0 0 25px #00f0ff;
+    box-shadow: 0 0 50px #00f7ff; /* Glow neón */
+    border: 2px solid #00f7ff;
 }
 
 /* ======= SECCIONES ======= */
 .section {
-    background: rgba(0, 30, 60, 0.9); /* Azul oscuro */
-    border-radius: 10px;
+    background: #002b5c; /* Azul eléctrico */
+    border-radius: 12px;
     padding: 20px;
     margin-bottom: 20px;
-    box-shadow: 0 0 20px #00f0ff;
+    border: 1px solid #00f7ff;
+    box-shadow: 0 0 25px #00f7ff;
 }
 .section h2 {
-    color: #00f0ff;
+    color: #00f7ff;
     margin-bottom: 15px;
-    border-bottom: 1px solid #00f0ff;
+    border-bottom: 2px solid #00f7ff;
     padding-bottom: 5px;
 }
 
 /* ======= LISTAS ======= */
-.section ul {
-    list-style: none;
-    padding-left: 0;
-}
 .section ul li {
     margin: 5px 0;
+    color: #ccefff; /* Azul claro para mejor contraste */
 }
 
-/* ======= LINK ======= */
+/* ======= LINKS ======= */
 .section a {
-    color: #00f0ff;
+    color: #00f7ff;
     text-decoration: none;
+    font-weight: bold;
 }
 .section a:hover {
-    text-decoration: underline;
-}
-
-/* ======= GRID DE DOS COLUMNAS ======= */
-.grid {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 20px;
+    text-shadow: 0 0 10px #00f7ff;
 }
 
 /* ======= QR ======= */
 .qr-container {
+    background: #001a33;
+    padding: 20px;
+    border-radius: 12px;
+    border: 2px solid #00f7ff;
+    box-shadow: 0 0 25px #00f7ff;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    background: rgba(0, 25, 50, 0.95); /* Azul más oscuro */
-    padding: 15px;
-    border-radius: 12px;
-    box-shadow: 0 0 25px #00f0ff;
-    max-width: 250px;
-    margin: 0 auto;
 }
 
 .qr-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: rgba(0, 40, 80, 0.95); /* Azul intermedio */
+    background: #003366;
     padding: 10px;
     border-radius: 10px;
-    border: 2px solid #00f0ff;
-    margin-bottom: 10px;
+    border: 2px solid #00f7ff;
+    box-shadow: 0 0 20px #00f7ff;
 }
 
 .qr-box img {
@@ -107,19 +78,10 @@ body {
 }
 
 .qr-text {
-    text-align: center;
-    color: #e0e0e0;
-    font-size: 14px;
+    margin-top: 10px;
     font-weight: bold;
-    margin-top: 5px;
-}
-
-/* ======= FOOTER ======= */
-footer {
-    text-align: center;
-    margin-top: 30px;
-    font-size: 0.9em;
-    color: #aaa;
+    color: #00f7ff;
+    text-shadow: 0 0 10px #00f7ff;
 }
 
 /* ======= RESPONSIVE ======= */
