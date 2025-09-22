@@ -77,7 +77,6 @@ body {
 }
 
 /* ======= QR ======= */
-/* CONTENEDOR QR */
 .qr-container {
     display: flex;
     flex-direction: column;
@@ -88,10 +87,9 @@ body {
     border-radius: 12px;
     box-shadow: 0 0 20px rgba(0, 255, 255, 0.4);
     max-width: 250px;
-    margin: 0 auto; /* Para centrar dentro del contenedor principal */
+    margin: 0 auto;
 }
 
-/* CAJA DEL QR */
 .qr-box {
     display: flex;
     justify-content: center;
@@ -103,13 +101,11 @@ body {
     margin-bottom: 10px;
 }
 
-/* IMAGEN QR */
 .qr-box img {
     width: 180px;
     height: 180px;
 }
 
-/* TEXTO DEL QR */
 .qr-text {
     text-align: center;
     color: white;
@@ -118,7 +114,6 @@ body {
     margin-top: 5px;
 }
 
-
 /* ======= FOOTER ======= */
 footer {
     text-align: center;
@@ -126,3 +121,51 @@ footer {
     font-size: 0.9em;
     color: #aaa;
 }
+
+/* ======= RESPONSIVIDAD PARA CELULAR ======= */
+@media (max-width: 768px) {
+    /* El grid pasa a una sola columna */
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Logo más pequeño */
+    .logo img {
+        max-width: 180px;
+    }
+
+    /* QR se adapta */
+    .qr-box img {
+        width: 140px;
+        height: 140px;
+    }
+
+    /* Secciones más compactas */
+    .section {
+        padding: 15px;
+    }
+
+    .section h2 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .contenedor-principal {
+        padding: 15px;
+    }
+
+    .qr-box img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .qr-text {
+        font-size: 12px;
+    }
+}
+
