@@ -118,7 +118,6 @@ body {
     margin-top: 5px;
 }
 
-
 /* ======= FOOTER ======= */
 footer {
     text-align: center;
@@ -127,3 +126,52 @@ footer {
     color: #aaa;
 }
 
+/* ======= RESPONSIVE ======= */
+@media (max-width: 992px) {
+    .grid {
+        grid-template-columns: 1fr; /* En tablet y celular, se apilan */
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .contenedor-principal {
+        padding: 15px;
+    }
+
+    .logo img {
+        max-width: 180px;
+    }
+
+    .section {
+        padding: 15px;
+    }
+
+    .section h2 {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .section ul {
+        font-size: 0.9rem;
+    }
+
+    .qr-container {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .qr-box img,
+    #qrcode canvas {
+        width: 140px !important;
+        height: 140px !important;
+    }
+
+    footer {
+        font-size: 0.8rem;
+        padding: 10px;
+    }
+}
