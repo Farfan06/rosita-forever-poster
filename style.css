@@ -13,10 +13,10 @@ body {
 .contenedor-principal {
     max-width: 1100px;
     width: 100%;
-    background: rgba(15, 15, 30, 0.95);
+    background: rgba(10, 20, 40, 0.95); /* Azul muy oscuro */
     border-radius: 20px;
     padding: 30px;
-    box-shadow: 0 0 40px #00f0ff;
+    box-shadow: 0 0 40px #00f0ff; /* Glow azul */
 }
 
 /* ======= CONTENEDOR INTERNO ======= */
@@ -38,11 +38,11 @@ body {
 
 /* ======= SECCIONES ======= */
 .section {
-    background: rgba(20, 20, 35, 0.9);
+    background: rgba(0, 30, 60, 0.9); /* Azul oscuro */
     border-radius: 10px;
     padding: 20px;
     margin-bottom: 20px;
-    box-shadow: 0 0 15px #00f0ff;
+    box-shadow: 0 0 20px #00f0ff;
 }
 .section h2 {
     color: #00f0ff;
@@ -82,10 +82,10 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: #0d1117;
+    background: rgba(0, 25, 50, 0.95); /* Azul más oscuro */
     padding: 15px;
     border-radius: 12px;
-    box-shadow: 0 0 20px rgba(0, 255, 255, 0.4);
+    box-shadow: 0 0 25px #00f0ff;
     max-width: 250px;
     margin: 0 auto;
 }
@@ -94,7 +94,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #0b0f14;
+    background: rgba(0, 40, 80, 0.95); /* Azul intermedio */
     padding: 10px;
     border-radius: 10px;
     border: 2px solid #00f0ff;
@@ -108,7 +108,7 @@ body {
 
 .qr-text {
     text-align: center;
-    color: #fff;
+    color: #e0e0e0;
     font-size: 14px;
     font-weight: bold;
     margin-top: 5px;
@@ -122,44 +122,19 @@ footer {
     color: #aaa;
 }
 
-/* ======= RESPONSIVIDAD ======= */
+/* ======= RESPONSIVE ======= */
 @media (max-width: 768px) {
-    /* Grid pasa a una columna */
     .grid {
         grid-template-columns: 1fr;
     }
 
-    /* Logo más pequeño */
     .logo img {
         max-width: 180px;
     }
 
-    /* QR más compacto */
     .qr-box img {
         width: 150px;
         height: 150px;
     }
-
-    .section {
-        padding: 15px;
-    }
 }
 
-@media (max-width: 480px) {
-    body {
-        padding: 10px;
-    }
-
-    .contenedor-principal {
-        padding: 15px;
-    }
-
-    .qr-box img {
-        width: 120px;
-        height: 120px;
-    }
-
-    .qr-text {
-        font-size: 12px;
-    }
-}
