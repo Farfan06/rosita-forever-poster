@@ -31,13 +31,13 @@ body {
     margin-bottom: 30px;
 }
 .logo img {
-    width: 100%;           /* Que nunca se salga del contenedor */
-    max-width: 220px;      /* Tamaño máximo en PC */
-    height: auto;          /* Mantiene proporción */
+    width: 100%;
+    max-width: 220px;
+    height: auto;
     border-radius: 10px;
     box-shadow: 0 0 25px #00f0ff;
     display: block;
-    margin: 0 auto;        /* Centrado */
+    margin: 0 auto;
 }
 
 /* ======= SECCIONES ======= */
@@ -80,6 +80,11 @@ body {
     gap: 20px;
 }
 
+/* ======= QR WRAPPER ======= */
+.qrs-wrapper {
+    margin-top: 15px;
+}
+
 /* ======= QR ======= */
 .qr-container {
     display: flex;
@@ -90,8 +95,8 @@ body {
     padding: 15px;
     border-radius: 12px;
     box-shadow: 0 0 20px rgba(0, 255, 255, 0.4);
-    max-width: 250px;
-    margin: 0 auto;
+    max-width: 230px;
+    margin: 10px auto;
 }
 .qr-box {
     display: flex;
@@ -103,16 +108,22 @@ body {
     border: 2px solid cyan;
     margin-bottom: 10px;
 }
-.qr-box img {
-    width: 180px;
-    height: 180px;
-}
 .qr-text {
     text-align: center;
     color: white;
     font-size: 14px;
     font-weight: bold;
     margin-top: 5px;
+}
+
+/* Colores distintos */
+.doc-qr {
+    box-shadow: 0 0 20px rgba(0, 240, 255, 0.6);
+}
+.web-qr {
+    .web-qr {
+    box-shadow: 0 0 20px rgba(30, 144, 255, 0.6); /* Glow azul */
+}
 }
 
 /* ======= FOOTER ======= */
@@ -126,7 +137,7 @@ footer {
 /* ======= RESPONSIVE ======= */
 @media (max-width: 992px) {
     .grid {
-        grid-template-columns: 1fr; /* En tablet y celular, se apilan */
+        grid-template-columns: 1fr;
     }
 }
 
@@ -140,7 +151,7 @@ footer {
     }
 
     .logo img {
-        max-width: 160px; /* Más pequeño en tablet/móvil */
+        max-width: 160px;
     }
 
     .section {
@@ -161,8 +172,8 @@ footer {
         padding: 10px;
     }
 
-    .qr-box img,
-    #qrcode canvas {
+    #qrcode canvas,
+    #qrcode2 canvas {
         width: 140px !important;
         height: 140px !important;
     }
@@ -175,7 +186,8 @@ footer {
 
 @media (max-width: 480px) {
     .logo img {
-        max-width: 130px; /* Más reducido en móviles pequeños */
+        max-width: 130px;
     }
 }
+
 
